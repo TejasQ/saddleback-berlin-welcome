@@ -1,5 +1,5 @@
-@import 'variables/grid';
-@import 'mixins/generate-gradients';
+@import "variables/grid";
+@import "mixins/generate-gradients";
 
 .tile {
   display: flex;
@@ -16,5 +16,5 @@
     margin: 0;
   }
 
-  @include generateGradients;
+  @include generate-gradients;
 }

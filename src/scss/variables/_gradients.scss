@@ -1,12 +1,12 @@
-@import 'colors';
-@import '../functions/get-color';
-@import '../functions/two-color-gradient';
+@import "colors";
+@import "../functions/get-color";
+@import "../functions/two-color-gradient";
 
 $gradients: (
-  navy_teal: twoColorGradient(getColor('navie'), getColor('primary-accent')),
-  green_cyan: twoColorGradient(getColor('depth'), getColor('primary')),
-  navy_cyan: twoColorGradient(getColor('navie'), getColor('primary')),
-  teal_cyan: twoColorGradient(getColor('primary-accent'), getColor('primary')),
-  teal_green: twoColorGradient(getColor('primary-accent'), getColor('depth')),
-  navy_light-red: twoColorGradient(getColor('navie'), getColor('light-red')),
+  navy_teal: two-color-gradient(get-color("navie"), get-color("primary-accent")),
+  green_cyan: two-color-gradient(get-color("depth"), get-color("primary")),
+  navy_cyan: two-color-gradient(get-color("navie"), get-color("primary")),
+  teal_cyan: two-color-gradient(get-color("primary-accent"), get-color("primary")),
+  teal_green: two-color-gradient(get-color("primary-accent"), get-color("depth")),
+  navy_light-red: two-color-gradient(get-color("navie"), get-color("light-red")),
 );

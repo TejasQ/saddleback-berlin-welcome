@@ -1,6 +1,6 @@
-@import '../variables/gradients';
+@import "../variables/gradients";
 
-@mixin generateGradients {
+@mixin generate-gradients {
   @each $name, $gradient in $gradients {
     &.gradient__#{$name} {
       background-image: $gradient;
