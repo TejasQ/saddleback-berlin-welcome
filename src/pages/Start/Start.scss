@@ -1,0 +1,19 @@
+@import "variables/grid";
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .start-page__tiles {
+    display: flex;
+  }
+
+  .start-page__tiles .tile {
+    margin-left: $grid-gutter;
+    margin-right: $grid-gutter;
+  }
+}

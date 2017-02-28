@@ -11,6 +11,7 @@
     "serve": "npm run lint && webpack-dashboard -c blue -- webpack-dev-server"
   },
   "dependencies": {
+    "history": "^4.5.1",
     "html-webpack-plugin": "^2.28.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

@@ -6,9 +6,9 @@ import './Tile.scss';
 
 const TileComponent = props => (
   <section className={`tile ${props.className}`}>
-    <h1 className="tile__heading">{props.title}</h1>
+    <h2 className="tile__heading">{props.title}</h2>
     {props.children && <DotSeparator />}
-    {props.children && props.children}
+    {props.children && <span className="tile__content">{props.children}</span>}
   </section>
 );
 
