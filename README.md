@@ -25,14 +25,14 @@ Once it's up and running, everything lives in `./src`, so happy coding!
 These are barebones and basic, and will only serve as a guide for now. We will use issue tracking shortly.
 
 * Create SCSS that adheres to the styleguide.
-* Create a `<Tile />` component to show an interactive tile that handles click logic.
-* Implement React Router (v4 Beta, because we cool like dat).
+* ✅ Create a `<Tile />` component to show an interactive tile that handles click logic.
+* ✅ Implement React Router (v4 Beta, because we cool like dat).
 * Create presentational components.
 * Create container components.
-* Find and implement a good Google Maps wrapper for the `<SmallGroupsComponent />`.
+* ✅ Find and implement a good Google Maps wrapper for the `<SmallGroupsComponent />`.
 * Create a `<FormComponent />`.
 * Create a `<ModalBoxComponent />`.
 
 ## Contributing
 
-Fix an issue, make a pull request, shaslam.
+Fix an issue, make a pull request, and Bob's your uncle.
