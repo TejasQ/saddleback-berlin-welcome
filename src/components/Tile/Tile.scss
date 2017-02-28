@@ -1,0 +1,20 @@
+@import 'variables/grid';
+@import 'mixins/generate-gradients';
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: $grid-gutter;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  color: white;
+
+  .tile__heading {
+    margin: 0;
+  }
+
+  @include generateGradients;
+}

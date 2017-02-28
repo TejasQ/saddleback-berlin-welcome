@@ -1,0 +1,9 @@
+@import '../variables/colors';
+
+@function getColor($color) {
+  @if (map_has_key($colors, $color) == false) {
+    @error('Sorry, the color #{$color} does not exist.');
+  }
+
+  @return map_get($colors, $color);
+}

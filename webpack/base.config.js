@@ -41,10 +41,19 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader?modules',
+          'css-loader',
           'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [join(__dirname, '../src/scss')],
+            },
+          },
         ],
+      },
+      {
+        test: /\.(otf|ttf|woff|eot)$/,
+        use: ['file-loader'],
       },
     ],
   },

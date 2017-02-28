@@ -1,3 +1,7 @@
 import React from 'react';
 
-export default () => (<div />);
+import StartPage from './pages/StartPage/StartPage.page';
+
+import './app.scss';
+
+export default () => (<div><StartPage /></div>);

@@ -1,0 +1,9 @@
+@import '../variables/gradients';
+
+@mixin generateGradients {
+  @each $name, $gradient in $gradients {
+    &.gradient__#{$name} {
+      background-image: $gradient;
+    }
+  }
+}

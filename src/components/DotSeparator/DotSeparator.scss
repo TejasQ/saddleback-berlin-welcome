@@ -1,0 +1,27 @@
+@import 'variables/grid';
+
+.dot-separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .dot-separator__dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .dot-separator__dot + .dot-separator__dot {
+    margin-left: 5px;
+  }
+}
+
+.tile .dot-separator {
+  margin: $grid-gutter 0;
+}

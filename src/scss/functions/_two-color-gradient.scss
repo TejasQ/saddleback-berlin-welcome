@@ -1,0 +1,3 @@
+@function twoColorGradient($colorA, $colorB) {
+  @return linear-gradient(135deg, $colorA 0%, $colorB 100%);
+}

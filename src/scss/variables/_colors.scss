@@ -1,0 +1,36 @@
+$colors: (
+
+  // Main Colors,
+  primary: #00AEEF,
+  primary-accent: #56C4C4,
+  secondary: #F99E49,
+  secondary-accent: #F47A46,
+
+  // Additional Colors,
+  navie: #004970, // not writing "navy" here because it's a default CSS color.
+  light-red: #E06556,
+  calm: #6DCFF6,
+  depth: #7DBF90,
+
+  // Neutrals,
+  charcoal: #4D4D4F,
+  medium-grey: #BCBEC0,
+  light-neutral: #F1F1F2,
+
+)
+
+/**
+  NOTE ON TINTS: They can only be used with rgba at 75%, 50%, or 25%.
+ */
+
+/**
+  DO MIX:
+  - primary-accent + secondary
+  - secondary + secondary-accent
+  - primary + rgba(primary-accent, 50%)
+  - navie + primary-accent
+
+  DO NOT MIX:
+  - navie + secondary-accent
+  - depth + light-red
+*/
