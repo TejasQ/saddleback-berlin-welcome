@@ -58,6 +58,8 @@ export default class extends Component {
         </div>
         <div className="small-groups-page__right-pane">
           <h2>Small Groups</h2>
+          <p>Below are a list of available small groups that
+          meet regularly. Tap on a small group for more details.</p>
         </div>
       </div>);
   }
