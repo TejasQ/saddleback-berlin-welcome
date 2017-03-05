@@ -47,13 +47,18 @@ export default class extends Component {
     return (
       <div className="small-groups-page">
         <BackBtn />
-        <SmallGroupsMap
-          containerElement={<div style={{ height: '100%' }} />}
-          mapElement={<div style={{ height: '100%' }} />}
-          onMarkerClick={marker => this.handleMarkerClick(marker)}
-          onMarkerClose={marker => this.handleMarkerClose(marker)}
-          markers={this.state.markers}
-        />
+        <div className="small-groups-page__left-pane">
+          <SmallGroupsMap
+            containerElement={<div style={{ height: '100%' }} />}
+            mapElement={<div style={{ height: '100%' }} />}
+            onMarkerClick={marker => this.handleMarkerClick(marker)}
+            onMarkerClose={marker => this.handleMarkerClose(marker)}
+            markers={this.state.markers}
+          />
+        </div>
+        <div className="small-groups-page__right-pane">
+          <h2>Small Groups</h2>
+        </div>
       </div>);
   }
 }

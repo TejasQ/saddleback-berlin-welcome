@@ -1,4 +1,19 @@
+@import '../../scss/variables/grid';
+
 .small-groups-page {
   width: 100vw;
   height: 100vh;
+  display: flex;
+}
+
+.small-groups-page__left-pane {
+  width: 70vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.small-groups-page__right-pane {
+  padding: $grid-gutter;
+  width: 30vw;
+  box-sizing: border-box;
 }
