@@ -1,0 +1,28 @@
+@import "variables/colors";
+
+.back-btn {
+  position: fixed;
+  display: block;
+  border: 1px solid map-get($colors, "light-neutral");
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  left: 40px;
+  top: 40px;
+  background-color: map-get($colors, "charcoal");
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform: translate(50%, 50%);
+    stroke: white;
+    fill: white;
+  }
+}

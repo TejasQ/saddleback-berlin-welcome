@@ -2,6 +2,7 @@ const { resolve, join } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
+const SvgStorePlugin = require('external-svg-sprite-loader/lib/SvgStorePlugin');
 
 module.exports = {
   entry: [
@@ -55,6 +56,10 @@ module.exports = {
         test: /\.(otf|ttf|woff|eot)$/,
         use: ['file-loader'],
       },
+      {
+        loader: 'external-svg-sprite-loader',
+        test: /\.svg$/,
+      },
     ],
   },
 
@@ -65,5 +70,6 @@ module.exports = {
       template: join(__dirname, '/../src/app.html'),
     }),
     new DashboardPlugin(),
+    new SvgStorePlugin(),
   ],
 };

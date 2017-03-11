@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import SmallGroupsMap from './Map/Map.component';
 import markers from './data/small-groups';
+import BackBtn from '../../components/BackBtn/BackBtn.component';
 
 import './SmallGroups.scss';
 
@@ -45,6 +46,7 @@ export default class extends Component {
   render() {
     return (
       <div className="small-groups-page">
+        <BackBtn />
         <SmallGroupsMap
           containerElement={<div style={{ height: '100%' }} />}
           mapElement={<div style={{ height: '100%' }} />}
