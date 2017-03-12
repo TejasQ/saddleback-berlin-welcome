@@ -12,9 +12,11 @@ export default () => (
           Get connected to community within Saddleback Berlin.
         </Tile>
       </Link>
-      <Tile title="Ministries" className="gradient__navy_light-red" >
-        Serve the body of Christ by getting involved.
-      </Tile>
+      <Link to="/ministries">
+        <Tile title="Ministries" className="gradient__navy_light-red" >
+          Serve the body of Christ by getting involved.
+        </Tile>
+      </Link>
       <Tile title="Events" className="gradient__green_cyan" >
         The latest happenings at Saddleback Berlin.
       </Tile>

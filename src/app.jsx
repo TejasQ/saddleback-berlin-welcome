@@ -4,6 +4,7 @@ import createHistory from 'history/createBrowserHistory';
 
 import StartPage from './pages/Start/Start.page';
 import SmallGroupsPage from './pages/SmallGroups/SmallGroups.page';
+import MinistriesPage from './pages/Ministries/Ministries.page';
 
 import './app.scss';
 
@@ -14,6 +15,7 @@ export default () => (
     <Switch>
       <Route exact path="/" component={StartPage} />
       <Route path="/small-groups" component={SmallGroupsPage} />
+      <Route path="/ministries" component={MinistriesPage} />
     </Switch>
   </Router>
 );
