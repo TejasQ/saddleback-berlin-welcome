@@ -1,27 +1,24 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Tile from '../../components/Tile/Tile.component';
+import BackBtn from '../../components/BackBtn/BackBtn.component';
+import ministriesData from './Ministries.data';
 import './Ministries.scss';
 
-export default () => (
-  <div className="ministries-page">
-    <h1>Ministries</h1>
-    <div className="tiles">
-      <Tile title="Wellcome team" className="">
-        Wellcome team short description.
-      </Tile>
-      <Tile title="Prais team" className="">
-        Prais team short description.
-      </Tile>
-      <Tile title="Tech" className="">
-        Tech team short description.
-      </Tile>
-      <Tile title="Prayer corner" className="">
-        Prayer corner short description.
-      </Tile>
-      <Tile title="Youth ministry" className="">
-        Youth ministiry short description.
-      </Tile>
+export default () => {
+  const ministriesViewList = ministriesData.map(itm =>
+    <Link key={itm.id} to={`/ministries/${itm.id}`}>
+      <Tile title={itm.title}>{itm.text}</Tile>,
+    </Link>,
+  );
+
+  return (
+    <div className="ministries-page">
+      <BackBtn />
+      <h1>Ministries</h1>
+      <div className="tiles">
+        {ministriesViewList}
+      </div>
     </div>
-  </div>
-);
+  );
+};
