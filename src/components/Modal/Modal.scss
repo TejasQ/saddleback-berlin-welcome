@@ -1,0 +1,29 @@
+@import "variables/grid";
+@import "variables/colors";
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 100;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vh;
+  height: 90vh;
+  box-shadow: 0 0 80px black;
+  transform: translateY(-50%);
+  background-color: white;
+}
