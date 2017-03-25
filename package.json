@@ -11,6 +11,7 @@
     "serve": "npm run lint && webpack-dashboard -c blue -- webpack-dev-server"
   },
   "dependencies": {
+    "external-svg-sprite-loader": "^2.1.1",
     "history": "^4.5.1",
     "html-webpack-plugin": "^2.28.0",
     "react": "^15.4.2",
