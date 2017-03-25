@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import SmallGroupsMap from './Map/Map.component';
-import markers from './data/small-groups';
+import markers from './data/markers';
 import BackBtn from '../../components/BackBtn/BackBtn.component';
+import LinkList from '../../components/LinkList/LinkList.component';
 
 import './SmallGroups.scss';
 
@@ -60,6 +61,7 @@ export default class extends Component {
           <h2>Small Groups</h2>
           <p>Below are a list of available small groups that
           meet regularly. Tap on a small group for more details.</p>
+          <LinkList className="small-groups-page__link-list" items={this.state.markers} />
         </div>
       </div>);
   }

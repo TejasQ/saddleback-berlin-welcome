@@ -1,0 +1,38 @@
+@import 'variables/grid';
+@import 'mixins/generate-gradients';
+
+.small-group-info-window {
+  display: flex;
+  align-items: center;
+  margin: 4px 0 0; // Undo Google Maps' ugly asymmetry.
+
+  .small-group-info-window__photo {
+    max-width: 100px;
+    margin-right: $grid-gutter;
+  }
+
+  .small-group-info-window__title {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  .small-group-info-window__subtitle {
+    margin: 0;
+    font-size: 13px;
+    color: map-get($colors, 'medium-grey');
+  }
+
+  .small-group-info-window__button {
+    margin-top: 12px;
+    width: 100%;
+    border: 0;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+
+    @include generate-gradients;
+  }
+}

@@ -7,13 +7,21 @@
 }
 
 .small-groups-page__left-pane {
-  width: 70vw;
+  width: 60vw;
   height: 100vh;
   box-sizing: border-box;
 }
 
 .small-groups-page__right-pane {
   padding: $grid-gutter * 2;
-  width: 30vw;
+  width: 40vw;
   box-sizing: border-box;
+}
+
+.small-groups-page__link-list {
+  margin: 0 ($grid-gutter * -2);
+}
+
+.small-groups-page__link-list .link-list__item {
+  padding: $grid-gutter;
 }
