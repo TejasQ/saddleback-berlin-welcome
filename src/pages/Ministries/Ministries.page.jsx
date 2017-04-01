@@ -8,7 +8,7 @@ import './Ministries.scss';
 export default () => {
   const ministriesViewList = ministriesData.map(itm =>
     <Link key={itm.id} to={`/ministries/${itm.id}`}>
-      <Tile title={itm.title}>{itm.text}</Tile>,
+      <Tile title={itm.title}>{itm.shortDesr}</Tile>
     </Link>,
   );
 
