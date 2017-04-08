@@ -1,25 +1,29 @@
 import React, { PropTypes } from 'react';
-import BackBtn from '../../components/BackBtn/BackBtn.component';
 import ministriesData from '../Ministries/Ministries.data';
+
+import ContactForm from '../../components/ContactForm/ContactForm.component';
+import PageWithTitleLayout from '../../components/PageWithTitleLayout/PageWithTitleLayout.component';
+
 import './Ministry.scss';
 
 const MinistryPage = ({ match }) => {
   const itm = ministriesData.find(el => el.id === +match.params.id);
   return (
-    <div className="ministry-page">
-      <BackBtn to="/ministries" />
-      <h1>Wellcome to the {itm.title} page</h1>
-      <div className="page-content">
-        <section className="ministry-info">
-          <h2>{itm.title}</h2>
-          <div dangerouslySetInnerHTML={itm.descr} />
-        </section>
-        <section className="join-ministry">
-          <h2>Join this ministry</h2>
-          <form>join form will be here</form>
-        </section>
-      </div>
-    </div>
+    <PageWithTitleLayout
+      className="ministry-page"
+      pageTitle={itm.title}
+      titleClass="title-row_black title-row_white-text"
+      contentClass="ministry-page__content"
+    >
+      <section className="ministry-page__info ministry-page__column">
+        <h2>{itm.title}</h2>
+        <div dangerouslySetInnerHTML={itm.descr} />
+      </section>
+      <section className="ministry-page__form-container ministry-page__column">
+        <h2>Join this ministry</h2>
+        <ContactForm />
+      </section>
+    </PageWithTitleLayout>
   );
 };
 

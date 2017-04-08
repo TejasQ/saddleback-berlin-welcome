@@ -1,25 +1,28 @@
+@import "variables/grid";
+
 .ministry-page {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 10px;
 
   h1 {
-    font-size: 50px;
+    margin: 0;
+    font-size: 100px;
   }
 
-  .page-content {
+  .ministry-page__content {
     display: flex;
     justify-content: center;
+    max-width: 730px;
+    margin: 0 auto;
+  }
 
-    .ministry-info {
-      margin-right: 40px;
-      flex: 0 1 400px;
-    }
+  .ministry-page__form-container {
+    flex: 0 0 300px;
+  }
 
-    .join-ministry {
-      flex: 0 1 300px;
-    }
+  .ministry-page__column {
+    padding: $grid-gutter * 2;
   }
 }

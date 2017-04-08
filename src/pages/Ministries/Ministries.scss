@@ -7,25 +7,19 @@
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    font-size: 100px;
-    margin-bottom: 30px;
-  }
-
-  .tiles {
+  .ministries-page__ministries {
     display: flex;
     flex-wrap: wrap;
+    width: 928px;
+    margin: 0 ($grid-gutter * -1);
+  }
 
-    .tile {
-      width: 200px;
-      height: 200px;
-      border: 2px solid map-get($colors, "medium-grey");
-      margin: $grid-gutter;
-      color: black;
+  .ministries-page__ministry {
+    margin: $grid-gutter;
+  }
 
-      .dot-separator__dot {
-        background-color: map-get($colors, "charcoal");
-      }
-    }
+  .ministries-page__heading {
+    margin: 0;
+    font-size: 100px;
   }
 }

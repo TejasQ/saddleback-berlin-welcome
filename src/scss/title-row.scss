@@ -1,0 +1,19 @@
+@import "mixins/generate-gradients";
+
+.title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vw;
+  min-height: 250px;
+
+  &_black {
+    background-color: black;
+  }
+
+  &_white-text {
+    color: white;
+  }
+
+  @include generate-gradients;
+}
