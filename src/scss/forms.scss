@@ -1,0 +1,40 @@
+@import "variables/grid";
+@import "mixins/generate-gradients";
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  & + .input-container {
+    margin-top: $grid-gutter;
+  }
+
+  .input-container__input {
+    padding: $grid-gutter / 2;
+    font-size: inherit;
+    border: 0;
+  }
+
+  .input-container__input_multiline {
+    min-height: 200px;
+  }
+
+}
+
+.button {
+  padding: $grid-gutter;
+  border: 0;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+
+  &.button_wide {
+    width: 100%;
+  }
+
+  @include generate-gradients;
+}

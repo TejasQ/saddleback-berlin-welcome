@@ -1,0 +1,7 @@
+@import "variables/grid";
+@import "variables/colors";
+
+.contact-form {
+  padding: $grid-gutter;
+  background-color: map-get($colors, "light-neutral");
+}

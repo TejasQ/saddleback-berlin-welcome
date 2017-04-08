@@ -5,10 +5,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint-css": "sass-lint -c .sass-lint.yml -v -q",
+    "lint-css": "sass-lint -c .sass-lint.yml -v -q --max-warnings 1",
     "lint-js": "eslint --ext .js --ext .jsx .",
     "lint": "npm run lint-css && npm run lint-js",
-    "serve": "npm run lint && webpack-dashboard -c blue -- webpack-dev-server"
+    "serve": "webpack-dashboard -c blue -- webpack-dev-server"
   },
   "dependencies": {
     "external-svg-sprite-loader": "^2.1.1",

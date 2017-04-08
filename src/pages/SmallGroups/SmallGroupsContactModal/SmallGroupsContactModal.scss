@@ -1,0 +1,18 @@
+@import "variables/grid";
+
+.small-groups-contact-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $grid-gutter * 4;
+  width: 100%;
+
+  .small-groups-contact-modal__left-pane {
+    margin-right: $grid-gutter * 2;
+  }
+
+  .small-groups-contact-modal__form {
+    margin-top: $grid-gutter * 2  ;
+  }
+
+}
