@@ -1,0 +1,31 @@
+@import "variables/grid";
+@import "variables/colors";
+
+.ministries-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tile {
+      width: 200px;
+      height: 200px;
+      border: 2px solid map-get($colors, "medium-grey");
+      margin: $grid-gutter;
+      color: black;
+
+      .dot-separator__dot {
+        background-color: map-get($colors, "charcoal");
+      }
+    }
+  }
+}
