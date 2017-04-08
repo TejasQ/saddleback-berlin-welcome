@@ -1,0 +1,10 @@
+@import "variables/grid";
+
+.page-with-title-layout {
+
+  .page-with-title-layout__content {
+    margin: 0 auto;
+    padding: $grid-gutter * 2;
+  }
+
+}

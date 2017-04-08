@@ -20,6 +20,16 @@
     transform: scale(.9);
   }
 
+  &.tile_clear {
+    border: 2px solid currentColor;
+    color: map-get($colors, "medium-grey");
+  }
+
+  &.tile_half {
+    width: 200px;
+    height: 200px;
+  }
+
   .tile__heading {
     margin: 0;
   }

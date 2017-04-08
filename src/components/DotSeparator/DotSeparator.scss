@@ -1,4 +1,5 @@
 @import "variables/grid";
+@import "variables/colors";
 
 .dot-separator {
   display: flex;
@@ -24,4 +25,8 @@
 
 .tile .dot-separator {
   margin: $grid-gutter 0;
+}
+
+.tile_clear .dot-separator__dot {
+  background-color: map-get($colors, "medium-grey");
 }
