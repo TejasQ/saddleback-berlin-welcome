@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Modal.scss';
 
-const Modal = props => (
-  <div className="modal-overlay">
-    <div className={`modal ${props.className}`}>
-      {props.children}
-    </div>
-  </div>
-);
+class Modal extends Component {
+
+  componentDidMount() {
+    document.addEventListener('keyup', this.props.close);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keyup', this.props.close);
+  }
+
+  render() {
+    return (<div className="modal-overlay">
+      <div className={`modal ${this.props.className}`} >
+        {this.props.children}
+      </div>
+    </div>);
+  }
+}
 
 Modal.propTypes = {
   className: React.PropTypes.string,
   children: React.PropTypes.node.isRequired,
+  close: React.PropTypes.func.isRequired,
 };
 
 Modal.defaultProps = {

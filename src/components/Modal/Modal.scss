@@ -7,7 +7,6 @@
   top: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
-  pointer-events: none;
   width: 100vw;
   height: 100vh;
 }
@@ -22,8 +21,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 90vh;
-  height: 90vh;
-  box-shadow: 0 0 80px black;
+  height: 82vh;
+  box-shadow: 0 0 300px 0px rgba(0, 0, 0, 0.58);
   transform: translateY(-50%);
   background-color: white;
 }

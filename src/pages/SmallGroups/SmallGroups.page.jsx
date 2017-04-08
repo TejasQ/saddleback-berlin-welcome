@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import markers from './data/markers';
 import BackBtn from '../../components/BackBtn/BackBtn.component';
-import LinkList from '../../components/LinkList/LinkList.component';
 
 import SmallGroupsMap from './Map/Map.component';
 import SmallGroupsContactModal from './SmallGroupsContactModal/SmallGroupsContactModal.component';
@@ -48,10 +47,17 @@ export default class extends Component {
 
   render() {
     return (
-      <div className="small-groups-page">
-        { this.state.activeGroup && <SmallGroupsContactModal group={this.state.activeGroup} /> }
+      <div className="small-groups-page" >
+
+        { this.state.activeGroup && <SmallGroupsContactModal
+          closeModal={() => {
+            this.setState({ activeGroup: null });
+          }}
+          group={this.state.activeGroup}
+        /> }
+
         <BackBtn />
-        <div className="small-groups-page__left-pane">
+        <div className="small-groups-page__left-pane" >
           <SmallGroupsMap
             containerElement={<div style={{ height: '100%' }} />}
             mapElement={<div style={{ height: '100%' }} />}
@@ -60,14 +66,28 @@ export default class extends Component {
             markers={this.state.markers}
           />
         </div>
-        <div className="small-groups-page__right-pane">
+        <div className="small-groups-page__right-pane" >
           <h2>Small Groups</h2>
           <p>Below are a list of available small groups that
-          meet regularly. Tap on a small group for more details.</p>
-          <LinkList
-            className="small-groups-page__link-list"
-            items={this.state.markers}
-          />
+            meet regularly. Tap on a small group for more details.</p>
+          <ul className="link-list" >
+            {markers.map((marker, index) =>
+              <li>
+                <a
+                  className="link-list__item"
+                  key={marker.key || index}
+                  onClick={() => this.setState({ activeGroup: marker })}
+                  tabIndex="-1"
+                >
+                  { marker.picture &&
+                  <img className="link-list__image" alt={marker.title} src={marker.picture} /> }
+                  <div>
+                    <header className="link-list__title" >{marker.title}</header>
+                    {marker.subtitle && <p className="link-list__subtitle" >{marker.subtitle}</p>}
+                  </div>
+                </a>
+              </li>)}
+          </ul>
         </div>
       </div>);
   }

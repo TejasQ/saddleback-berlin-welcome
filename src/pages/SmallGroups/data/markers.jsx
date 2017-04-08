@@ -9,6 +9,7 @@ const markers = [
     subtitle: 'Zähringerstraße 95, Berlin 10119',
     email: 'hello@tej.as',
     picture: 'http://lorempixel.com/200/200',
+    description: 'This group meets on Wednesdays at 7pm in Berlin-Mitte. Please bring food!',
   },
   {
     key: 1,
@@ -17,6 +18,7 @@ const markers = [
     subtitle: 'Charlottenburg 24, Berlin 12345',
     email: 'dave@saddleback.de',
     picture: 'http://lorempixel.com/200/200/people',
+    description: 'This group meets on Wednesdays at 7pm in Berlin-Mitte. Please bring food!',
   },
 ];
 

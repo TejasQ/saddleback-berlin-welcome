@@ -14,7 +14,7 @@ const SmallGroupInfoWindow = props => (
 
       <div className="small-group-info-window__actions">
         <button
-          className="small-group-info-window__button gradient__navy_teal"
+          className="small-group-info-window__button button button_wide gradient__navy_teal"
         >
           Request to Join
         </button>

@@ -26,14 +26,6 @@
 
   .small-group-info-window__button {
     margin-top: 12px;
-    width: 100%;
-    border: 0;
-    padding: 8px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-
-    @include generate-gradients;
   }
+
 }

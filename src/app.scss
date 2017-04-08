@@ -1,5 +1,7 @@
 @import "scss/fonts";
 @import "scss/typography";
+@import "scss/link-list";
+@import "scss/forms";
 
 * {
   text-rendering: optimizeLegibility;
@@ -10,7 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 a {
