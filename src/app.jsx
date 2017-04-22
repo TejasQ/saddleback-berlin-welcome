@@ -6,6 +6,8 @@ import StartPage from './pages/Start/Start.page';
 import SmallGroupsPage from './pages/SmallGroups/SmallGroups.page';
 import MinistriesPage from './pages/Ministries/Ministries.page';
 import MinistryPage from './pages/Ministry/Ministry.page';
+import EventsPage from './pages/Events/Events.page';
+import EventPage from './pages/Event/Event.page';
 
 import './app.scss';
 
@@ -18,6 +20,8 @@ export default () => (
       <Route path="/small-groups" component={SmallGroupsPage} />
       <Route exact path="/ministries" component={MinistriesPage} />
       <Route path="/ministries/:id" component={MinistryPage} />
+      <Route exact path="/events" component={EventsPage} />
+      <Route path="/events/:id" component={EventPage} />
     </Switch>
   </Router>
 );

@@ -17,9 +17,11 @@ export default () => (
           Serve the body of Christ by getting involved.
         </Tile>
       </Link>
-      <Tile title="Events" className="gradient__green_cyan" >
-        The latest happenings at Saddleback Berlin.
-      </Tile>
+      <Link to="/events">
+        <Tile title="Events" className="gradient__green_cyan" >
+          The latest happenings at Saddleback Berlin.
+        </Tile>
+      </Link>
     </div>
   </div>
 );

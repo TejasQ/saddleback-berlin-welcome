@@ -1,24 +1,24 @@
 @import "variables/grid";
 @import "variables/colors";
 
-.ministries-page {
+.events-page {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  .ministries-page__ministries {
+  .events-page__events {
     display: flex;
     flex-wrap: wrap;
     max-width: 928px;
     margin: 0 ($grid-gutter * -1);
   }
 
-  .ministries-page__ministry {
+  .events-page__ministry {
     margin: $grid-gutter;
   }
 
-  .ministries-page__heading {
+  .events-page__heading {
     margin: 0;
     font-size: 100px;
   }
