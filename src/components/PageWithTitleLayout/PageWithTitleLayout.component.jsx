@@ -4,7 +4,7 @@ import './PageWithTitleLayout.scss';
 
 const PageWithTitleLayout = props => (
   <div className={`page-with-title-layout ${props.className}`}>
-    <BackBtn />
+    <BackBtn to={props.backTo} />
     <section
       className={`title-row ${props.titleClass}`}
     >
@@ -22,6 +22,7 @@ PageWithTitleLayout.propTypes = {
   pageTitle: React.PropTypes.string,
   contentClass: React.PropTypes.string,
   children: React.PropTypes.node,
+  backTo: React.PropTypes.string,
 };
 
 PageWithTitleLayout.defaultProps = {
@@ -30,6 +31,7 @@ PageWithTitleLayout.defaultProps = {
   pageTitle: '',
   contentClass: '',
   children: (<div />),
+  backTo: '/',
 };
 
 export default PageWithTitleLayout;
