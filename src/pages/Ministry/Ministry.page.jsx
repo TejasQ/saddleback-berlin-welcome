@@ -14,6 +14,7 @@ const MinistryPage = ({ match }) => {
       pageTitle={itm.title}
       titleClass="title-row_black title-row_white-text"
       contentClass="ministry-page__content"
+      backTo="/ministries"
     >
       <section className="ministry-page__info ministry-page__column">
         <h2>{itm.title}</h2>
